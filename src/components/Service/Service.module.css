@@ -1,0 +1,123 @@
+.name {
+    width: 20%;
+    font-size: 18px;
+    padding: 10px;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.description {
+    display: flex;
+    margin: 10px 0;
+}
+
+.textarea_description {
+    outline: none;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 930px;
+}
+
+.city {
+    display: flex;
+    margin: 10px 0;
+}
+
+.select_city {
+    margin-left: 10px;
+    padding: 10px;
+    width: 950px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.address {
+    display: flex;
+    margin: 10px 0;
+}
+
+.address_city {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 0 10px;
+    width: 130px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.button {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.button_add_address {
+    margin: 0 10px 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: blue;
+    color: blue;
+    width: 150px;
+}
+
+.input_address {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.address_form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.address_block {
+
+}
+
+.communication {
+    display: flex;
+    margin: 10px 0;
+}
+
+.call {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 950px;
+}
+
+.price {
+    display: flex;
+    margin: 10px 0;
+}
+
+.input_price {
+    margin: 0 10px;
+    padding: 10px;
+    width: 450px;
+    outline: none;
+}
+
+.work_unit {
+    outline: none;
+    padding: 10px;
+    width: 465px;
+}
+
+.requirements {
+    display: flex;
+}
+
+.checkbox_requirements {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
