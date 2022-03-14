@@ -1,0 +1,23 @@
+.nav {
+    text-decoration: none;
+    color: teal;
+    margin: 0 25px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 2px solid teal;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.nav:hover {
+    color: white;
+    background-color: teal;
+    transition: 0.5s ease;
+}
+
+.nav_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

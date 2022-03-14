@@ -16,14 +16,10 @@ import {
 } from "../../redux/ticket-reducer";
 import {useDispatch, useSelector} from "react-redux";
 import {AppRootStateType} from "../../redux/store";
+import {NavLink} from "react-router-dom";
 
 
 export function Service() {
-
-    const state = useSelector<AppRootStateType, AppRootStateType>(state => state) // удалить
-    // удалить
-    // удалить
-
 
     const description = useSelector<AppRootStateType, string>(state => state.ticket.description)
     const city = useSelector<AppRootStateType, string>(state => state.ticket.city.text)
@@ -38,6 +34,7 @@ export function Service() {
 
     return (
         <>
+            <NavLink to={"/"} className={style.nav}>На главную</NavLink>
             <h3>
                 О заявке
             </h3>
@@ -146,7 +143,6 @@ export function Service() {
                     </div>
                 </div>
             </div>
-            <button onClick={() => console.log(state)}>state</button>
         </>
     )
 }

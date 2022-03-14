@@ -54,8 +54,6 @@ type AllActionsType = ReturnType<typeof addDescriptionAC>
     | ReturnType<typeof changeAddressAC>
 
 
-
-
 export const ticketReducer = (state = initialState, action: AllActionsType): ITicket => {
     switch (action.type) {
         case "ADD_DESCRIPTION":
@@ -63,15 +61,10 @@ export const ticketReducer = (state = initialState, action: AllActionsType): ITi
                 ...state,
                 description: action.description
             }
-        case "ADD_CITY":
-            // return {
-            //     ...state,
-            //     city: action.city
-            // }
-        {
+        case "ADD_CITY": {
             const stateCopy = {...state}
             stateCopy.city = action.city
-            stateCopy.addresses = state.addresses.map(a => ({...a, city : action.city}))
+            stateCopy.addresses = state.addresses.map(a => ({...a, city: action.city}))
             return stateCopy
         }
 
@@ -88,27 +81,27 @@ export const ticketReducer = (state = initialState, action: AllActionsType): ITi
         case "IS_VERIFIED_ONLY":
             return {
                 ...state,
-                verified_only : action.verified_only
+                verified_only: action.verified_only
             }
         case "IS_HAS_PHOTO":
             return {
                 ...state,
-                has_photo : action.has_photo
+                has_photo: action.has_photo
             }
         case "IS_HAS_REVIEW":
             return {
                 ...state,
-                has_review : action.has_review
+                has_review: action.has_review
             }
         case "ADD_WORK_UNIT":
             return {
                 ...state,
-                work_unit : action.work_unit
+                work_unit: action.work_unit
             }
-        case "ADD_ADDRESS":{
+        case "ADD_ADDRESS": {
 
             const stateCopy = {...state}
-            const addressNew = {id : Date.now(), address : '', city : stateCopy.city}
+            const addressNew = {id: Date.now(), address: '', city: stateCopy.city}
             const addresses = stateCopy.addresses
             stateCopy.addresses = [...addresses, addressNew]
             return stateCopy
@@ -137,15 +130,7 @@ export const addDescriptionAC = (description: string) => {
     } as const
 }
 
-// export const addCityAC = (id: number, text: string) => {
-//     return {
-//         type: "ADD_CITY",
-//         id,
-//         text
-//     } as const
-// }
-
-export const addCityAC = (city : ICity) => {
+export const addCityAC = (city: ICity) => {
     return {
         type: "ADD_CITY",
         city
@@ -200,14 +185,14 @@ export const addAddressAC = () => {
     } as const
 }
 
-export const removeAddressAC = (id : number) => {
+export const removeAddressAC = (id: number) => {
     return {
         type: "REMOVE_ADDRESS",
         id
     } as const
 }
 
-export const changeAddressAC = (id : number, address : string) => {
+export const changeAddressAC = (id: number, address: string) => {
     return {
         type: "CHANGE_ADDRESS",
         id,

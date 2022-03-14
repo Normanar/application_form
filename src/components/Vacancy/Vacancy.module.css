@@ -9,25 +9,38 @@
     border-radius: 5px;
 }
 
-.description {
+.title {
     display: flex;
     margin: 10px 0;
 }
 
-.textarea_description {
+.input_title {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-left: 10px;
+    width: 928px;
+}
+
+.description_vacancy {
+    display: flex;
+    margin: 10px 0;
+}
+
+.textarea_description_vacancy {
     outline: none;
     padding: 10px;
     margin-left: 10px;
     border-radius: 5px;
-    width: 930px;
+    width: 928px;
 }
 
-.city {
+.city_vacancy {
     display: flex;
     margin: 10px 0;
 }
 
-.select_city {
+.select_city_vacancy {
     margin-left: 10px;
     padding: 10px;
     width: 950px;
@@ -35,12 +48,21 @@
     outline: none;
 }
 
-.address {
+.address_vacancy {
     display: flex;
     margin: 10px 0;
 }
 
-.address_city {
+.address_vacancy_block {
+
+}
+
+.address_vacancy_form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.address_vacancy_city {
     padding: 10px;
     border: 1px solid grey;
     border-radius: 5px;
@@ -50,11 +72,28 @@
     text-align: center;
 }
 
+.salary {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.experience {
+    display: flex;
+    margin-bottom: 10px;
+}
+
 .button {
     width: 40px;
     margin: 0 10px;
     border-radius: 5px;
     border: 1px solid grey;
+}
+
+.input_address {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 10px;
 }
 
 .button_add_address {
@@ -66,62 +105,22 @@
     width: 150px;
 }
 
-.input_address {
+.input_salary {
+    margin-left: 10px;
+    padding: 10px;
+    width: 448px;
     outline: none;
     border-radius: 5px;
     border: 1px solid grey;
-    padding: 10px;
 }
 
-.address_form {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.communication {
-    display: flex;
-    margin: 10px 0;
-}
-
-.call {
+.select_experience {
     margin-left: 10px;
     padding: 10px;
-    border-radius: 5px;
     width: 950px;
-}
-
-.price {
-    display: flex;
-    margin: 10px 0;
-}
-
-.input_price {
-    margin: 0 10px;
-    padding: 10px;
-    width: 450px;
     outline: none;
     border-radius: 5px;
     border: 1px solid grey;
-}
-
-.work_unit {
-    outline: none;
-    padding: 10px;
-    width: 468px;
-    border-radius: 5px;
-    border: 1px solid grey;
-}
-
-.requirements {
-    display: flex;
-}
-
-.checkbox_requirements {
-    margin-left: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 600px;
 }
 
 .nav {
