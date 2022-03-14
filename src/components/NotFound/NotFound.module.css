@@ -1,0 +1,21 @@
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-size: 55px;
+    font-weight: bold;
+    color: teal;
+}
+
+.nav {
+    text-decoration: none;
+    color: teal;
+    font-size: 17px;
+    font-weight: bold;
+    border: 2px solid teal;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 5px;
+}

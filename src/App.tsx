@@ -4,6 +4,7 @@ import './App.css';
 import {Service} from "./components/Service/Service";
 import {Vacancy} from "./components/Vacancy/Vacancy";
 import {Nav} from "./components/Nav/Nav";
+import {NotFound} from "./components/NotFound/NotFound";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
                 <Route path={"/"} element={<Nav/>}/>
                 <Route path={"service"} element={<Service/>}/>
                 <Route path={"vacancy"} element={<Vacancy/>}/>
+                <Route path={"*"} element={<NotFound/>}/>
             </Routes>
         </div>
     );
